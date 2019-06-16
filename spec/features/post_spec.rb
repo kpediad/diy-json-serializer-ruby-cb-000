@@ -6,6 +6,7 @@ describe 'navigate' do
     @post = Post.create(title: "My Post", description: "My post desc")
     author = Author.create(name: "Steven")
     @post.author = author
+    @post.save
     byebug
   end
 
